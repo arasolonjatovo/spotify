@@ -5,7 +5,7 @@ Il se fera en deux parties, implémentation de la maquette puis interfacer avec 
 
 ## Mockups
 
-![Aperçu des mockups](./src/assets/Mockup.psd)
+![Aperçu des mockups](./src/assets/Mockup.png)
 
 ## Lancer le projet en local
 

@@ -1,0 +1,15 @@
+.playlist {
+    &__albumCover {
+        display: block;
+        margin: 25% auto;
+        width: 50%;
+        box-shadow: -1px -1px 56px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px -1px 56px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px -1px 56px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: -45px;
+    }
+}
