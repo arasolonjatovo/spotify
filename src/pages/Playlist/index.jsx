@@ -8,13 +8,13 @@ export default function Playlist() {
   document.title = "Spotify - Lecteur web";
   return (
     <div className="playlist">
-      <header>
+      <header className="playlist__header">
         <img
           src={cover}
           alt="Couverture de la playlist séléctionnée"
           className="playlist__albumCover"
         />
-        <h1 className="playlist__title">[EDIT TITLE HERE]</h1>
+        <h1 className="playlist__title">[Edit Title Here]</h1>
       </header>
       {/* <section>
         <Button label="FOLLOWING" />

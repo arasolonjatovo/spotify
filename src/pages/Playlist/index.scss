@@ -1,11 +1,31 @@
+@import '../../sass/variables';
+
 .playlist {
+    &__header {
+        @media (min-width: $large) {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+    }
+
     &__albumCover {
         display: block;
-        margin: 25% auto;
+        margin: 22% auto;
         width: 50%;
-        box-shadow: -1px -1px 56px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: -1px -1px 56px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -1px -1px 56px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 44px -1px rgba(0, 0, 0, 0.84);
+        box-shadow: 0px 0px 44px -1px rgba(0, 0, 0, 0.84);
+        -moz-box-shadow: 0px 0px 44px -1px rgba(0, 0, 0, 0.84);
+
+        @media (min-width: $medium) {
+            width: 30%;
+            margin: 10% auto;
+        }
+
+        @media (min-width: $large) {
+            margin: 5%;
+            width: 15%;
+        }
     }
 
     &__title {
