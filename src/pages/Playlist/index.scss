@@ -1,11 +1,13 @@
 @import '../../sass/variables';
 
 .playlist {
+
     &__header {
         @media (min-width: $large) {
             display: flex;
-            justify-content: left;
+            flex-direction: column;
             align-items: center;
+            justify-content: left;
         }
     }
 
@@ -24,6 +26,7 @@
 
         @media (min-width: $large) {
             margin: 5%;
+            margin-bottom: 3%;
             width: 15%;
         }
     }
@@ -32,6 +35,15 @@
         text-align: center;
         margin-top: -45px;
         margin-bottom: 10%;
+
+        @media (min-width: $medium) {
+            margin-top: 0;
+            margin-bottom: 4%;
+        }
+
+        @media (min-width: $large) {
+            margin-bottom: 15%;
+        }
     }
 
     &__details {
@@ -39,16 +51,35 @@
         color: $secondary-color;
         font-size: 12px;
         margin-bottom: 5%;
+
+        @media (min-width: $medium) {
+            margin-bottom: 2%;
+        }
+
+        @media (min-width: $large) {
+            margin: 8% 0;
+            font-size: 15px;
+        }
     }
 
     & button.button--primary {
         padding: 0 15%;
+
+        @media (min-width: $large) {
+            font-size: 18px;
+        }
     }
 
     & button.button--secondary {
         font-size: 10px;
         height: 30px;
         padding: 0 7%;
+
+        @media (min-width: $large) {
+            font-size: 15px;
+            height: auto;
+            padding: 0 10%;
+        }
     }
 
 }

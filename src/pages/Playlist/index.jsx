@@ -14,10 +14,12 @@ export default function Playlist() {
           alt="Couverture de la playlist séléctionnée"
           className="playlist__albumCover"
         />
-        <h1 className="playlist__title">[Edit Title Here]</h1>
-        <Button label="FOLLOWING" type=" playlist button button--secondary" />
-        <p className="playlist__details">ARTIST NAME • 122,310 FOLLOWERS</p>
-        <Button label="SHUFFLE PLAY" type="playlist button button--primary" />
+        <div className="playlist__detailsContainer">
+          <h1 className="playlist__title">[Edit Title Here]</h1>
+          <Button label="FOLLOWING" type=" playlist button button--secondary" />
+          <p className="playlist__details">ARTIST NAME • 122,310 FOLLOWERS</p>
+          <Button label="SHUFFLE PLAY" type="playlist button button--primary" />
+        </div>
       </header>
     </div>
   );
