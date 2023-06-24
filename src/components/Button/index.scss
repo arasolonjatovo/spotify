@@ -1,0 +1,20 @@
+@import '../../sass/main.scss';
+
+.button {
+    margin: 0 auto;
+    display: block;
+    padding: 0 10%;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    color: $text-color;
+    font-family: 'Helvetica Bold';
+
+    &--primary {
+        background-color: $primary-color;
+    }
+
+    &--secondary {
+        border: 1px solid $primary-color;
+    }
+}

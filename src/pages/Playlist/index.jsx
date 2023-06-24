@@ -15,17 +15,10 @@ export default function Playlist() {
           className="playlist__albumCover"
         />
         <h1 className="playlist__title">[Edit Title Here]</h1>
+        <Button label="FOLLOWING" type=" playlist button button--secondary" />
+        <p className="playlist__details">ARTIST NAME • 122,310 FOLLOWERS</p>
+        <Button label="SHUFFLE PLAY" type="playlist button button--primary" />
       </header>
-      {/* <section>
-        <Button label="FOLLOWING" />
-        <h2>ARTIST NAME • 122,310 FOLLOWERS</h2>
-        <Button label="SHUFFLE PLAY" />
-      </section>
-      <section>
-        <div>
-          <p>Download</p>
-        </div>
-      </section> */}
     </div>
   );
 }

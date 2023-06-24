@@ -1,7 +1,9 @@
-export default function Button({ label }) {
+import "./index.scss";
+
+export default function Button({ label, type }) {
   return (
-    <div>
-      <p>{label}</p>
-    </div>
+    <button className={type}>
+      <p className="button__label">{label}</p>
+    </button>
   );
 }
