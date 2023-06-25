@@ -1,5 +1,7 @@
 .toggle {
   position: relative;
+  display: flex;
+  align-items: center;
 
   &__checkbox {
     height: 0;
@@ -13,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    width: 42px;
+    width: 35px;
     height: 20px;
     background: #696a6b;
     border-radius: 40px;
@@ -28,7 +30,6 @@
     border-radius: 60px;
     background: #b6b6b6;
     box-sizing: border-box;
-    bottom: -2px;
     left: 0;
     transition: 0.2s;
   }

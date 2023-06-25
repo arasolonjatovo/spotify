@@ -1,0 +1,25 @@
+@import "../../sass/variables";
+
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 8%;
+
+  &__menuIcon {
+    height: 30px;
+    width: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+  }
+
+  &__artist {
+    color: $secondary-color;
+    margin-top: -5px;
+  }
+}

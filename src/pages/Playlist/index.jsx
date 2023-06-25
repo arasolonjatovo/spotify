@@ -1,5 +1,6 @@
 import Button from "../../components/Button";
 import Toggle from "../../components/Toggle";
+import Song from "../../components/Song";
 
 import "./index.scss";
 
@@ -25,6 +26,10 @@ export default function Playlist() {
       <section className="download">
         <p>Download</p>
         <Toggle />
+      </section>
+      <section className="songSection">
+        <Song name="Song 1" artist="Artist 1" />
+        <Song name="Song 1" artist="Artist 1" />
       </section>
     </div>
   );
