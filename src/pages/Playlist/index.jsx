@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import Toggle from "../../components/Toggle";
 
 import "./index.scss";
 
@@ -21,6 +22,10 @@ export default function Playlist() {
           <Button label="SHUFFLE PLAY" type="playlist button button--primary" />
         </div>
       </header>
+      <section className="download">
+        <p>Download</p>
+        <Toggle />
+      </section>
     </div>
   );
 }

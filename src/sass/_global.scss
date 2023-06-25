@@ -1,41 +1,49 @@
-@import './variables';
+@import "./variables";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Helvetica Bold';
-    src: url('./Helvetica\ Bold.ttf') format('truetype');
+  font-family: "Helvetica Bold";
+  src: url("./Helvetica\ Bold.ttf") format("truetype");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Helvetica Bold';
-    font-size: 13px;
-    background-image: linear-gradient(0deg,
-            rgba(19, 19, 19, 1) 30%,
-            rgba(62, 56, 62, 1) 52%,
-            rgba(154, 138, 153, 1) 72%,
-            rgba(65, 58, 65, 1) 96%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: $text-color;
-    line-height: 16.9px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: "Helvetica Bold";
+  font-size: 13px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(19, 19, 19, 1) 30%,
+    rgba(62, 56, 62, 1) 52%,
+    rgba(154, 138, 153, 1) 72%,
+    rgba(65, 58, 65, 1) 96%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $text-color;
+  line-height: 16.9px;
 }
 
 #root {
-    height: 100%;
+  height: 100%;
 }
 
 h1 {
-    font-size: 28.6px;
+  font-size: 28.6px;
 
-    @media (min-width: $large) {
-        font-size: 42.9px;
-    }
+  @media (min-width: $large) {
+    font-size: 42.9px;
+  }
+}
+
+p {
+  @media (min-width: $large) {
+    font-size: 15px;
+  }
 }

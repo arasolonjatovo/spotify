@@ -1,20 +1,31 @@
-@import '../../sass/main.scss';
+@import "../../sass/main.scss";
 
 .button {
-    margin: 0 auto;
-    display: block;
-    padding: 0 10%;
-    border-radius: 30px;
-    border: none;
-    background-color: transparent;
-    color: $text-color;
-    font-family: 'Helvetica Bold';
+  margin: 0 auto;
+  display: block;
+  padding: 0 10%;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  color: $text-color;
+  font-family: "Helvetica Bold";
 
-    &--primary {
-        background-color: $primary-color;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    &--secondary {
-        border: 1px solid $primary-color;
+  &--primary {
+    background-color: $primary-color;
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $primary-color;
     }
+  }
+
+  &--secondary {
+    border: 1px solid $primary-color;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
 }
