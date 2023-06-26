@@ -27,6 +27,12 @@
     text-indent: 8px;
     min-width: 100%;
 
+    font-family: 'Helvetica bold';
+
+    &::placeholder {
+        color: white;
+    }
+
     @media (min-width: $medium) {
         min-width: 65%;
     }

@@ -1,0 +1,28 @@
+@import '../../sass/variables';
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__leftPart {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__cover {
+        height: 50px;
+        width: auto;
+    }
+
+    &__creator {
+        color: $secondary-color;
+        font-size: 12px;
+    }
+
+    & button.button--primary {
+        margin: inherit;
+    }
+}

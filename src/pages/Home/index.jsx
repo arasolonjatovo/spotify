@@ -1,6 +1,7 @@
 import "./index.scss";
 
 import SearchBar from "../../components/SearchBar";
+import Result from "../../components/Result";
 
 import logo from "../../assets/logo.webp";
 
@@ -16,6 +17,7 @@ export default function Home() {
       </section>
       <section className="results">
         <p>XX Résultats trouvés</p>
+        <Result name="Nom de la playlist" creator="Audrey" />
       </section>
     </div>
   );

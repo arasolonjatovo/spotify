@@ -4,12 +4,14 @@ import elipsis from "../../assets/elipsis.webp";
 
 export default function Song({ name, artist }) {
   return (
-    <div className="song">
-      <div className="song__details">
-        <p className="song__name">{name}</p>
-        <p className="song__artist">{artist}</p>
+    <article>
+      <div className="song">
+        <div className="song__details">
+          <p className="song__name">{name}</p>
+          <p className="song__artist">{artist}</p>
+        </div>
+        <img src={elipsis} alt="Kebab menu" className="song__menuIcon" />
       </div>
-      <img src={elipsis} alt="Kebab menu" className="song__menuIcon" />
-    </div>
+    </article>
   );
 }
