@@ -16,7 +16,7 @@ export default function Home() {
         <SearchBar />
       </section>
       <section className="results">
-        <p>XX Résultats trouvés</p>
+        <p className="search__nbResults">XX Résultats trouvés</p>
         <Result name="Nom de la playlist" creator="Audrey" />
       </section>
     </div>

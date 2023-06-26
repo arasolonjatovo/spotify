@@ -10,6 +10,10 @@
         justify-content: left;
         align-items: center;
         column-gap: 10px;
+
+        @media (min-width: $large) {
+            column-gap: 30px;
+        }
     }
 
     &__cover {
@@ -24,5 +28,9 @@
 
     & button.button--primary {
         margin: inherit;
+
+        @media (min-width: $large) {
+            padding: 0 3%;
+        }
     }
 }

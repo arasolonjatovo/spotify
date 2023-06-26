@@ -36,6 +36,14 @@
             margin-bottom: 3%;
         }
     }
+
+    &__nbResults {
+        margin-bottom: 10%;
+
+        @media (min-width: $medium) {
+            margin-bottom: 3%;
+        }
+    }
 }
 
 .results {
