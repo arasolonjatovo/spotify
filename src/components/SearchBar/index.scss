@@ -2,8 +2,16 @@
 
 .searchbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    row-gap: 20px;
+
+    @media (min-width: $medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
 
     & button.button--primary {
         margin: inherit;
@@ -17,8 +25,11 @@
     border: none;
     color: white;
     text-indent: 8px;
+    min-width: 100%;
 
-    min-width: 55%;
+    @media (min-width: $medium) {
+        min-width: 65%;
+    }
 
     &:focus {
         outline: white solid 2px;
