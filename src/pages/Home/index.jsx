@@ -11,8 +11,11 @@ export default function Home() {
         <img src={logo} alt="Logo de Spotify" className="logo" />
       </header>
       <section className="search">
-        <p>Rechercher une playlist dans Spotify</p>
+        <p className="search__desc">Rechercher une playlist dans Spotify</p>
         <SearchBar />
+      </section>
+      <section className="results">
+        <p>XX Résultats trouvés</p>
       </section>
     </div>
   );

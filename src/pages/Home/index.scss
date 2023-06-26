@@ -1,6 +1,41 @@
+@import '../../sass/variables';
+
 .logo {
     height: 60px;
     width: auto;
     margin: 15% auto;
     display: block;
+
+    @media (min-width: $medium) {
+        height: 80px;
+        margin: 10% auto;
+    }
+
+    @media (min-width: $large) {
+        margin: 5% auto;
+    }
+}
+
+.search {
+    margin: 20% 5% 15%;
+
+    @media (min-width: $medium) {
+        margin: 0 5% 5%
+    }
+
+    @media (min-width: $large) {
+        margin: 10% 5% 5%;
+    }
+
+    &__desc {
+        margin-bottom: 10%;
+
+        @media (min-width: $medium) {
+            margin-bottom: 3%;
+        }
+    }
+}
+
+.results {
+    margin: 0 5%;
 }
