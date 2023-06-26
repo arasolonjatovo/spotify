@@ -18,8 +18,10 @@
 
 .search {
     margin: 20% 5% 15%;
+    text-align: center;
 
     @media (min-width: $medium) {
+        text-align: left;
         margin: 0 5% 5%
     }
 
