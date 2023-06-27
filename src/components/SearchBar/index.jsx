@@ -17,11 +17,13 @@ export default function SearchBar({ setPlaylists }) {
       document.querySelector(
         ".searchbar.button.button--primary"
       ).disabled = true;
+      return false;
     } else {
       document.querySelector(
         ".searchbar.button.button--primary"
       ).disabled = false;
       searchPlaylist(searchKey, setPlaylists);
+      return true;
     }
   }
 
