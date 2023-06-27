@@ -15,7 +15,7 @@ export default async function getPlaylistDetails({ id, setDetails }) {
       }
     })
     .then((data) => {
-      setDetails(data);
       console.log(data);
+      setDetails(data);
     });
 }

@@ -61,8 +61,8 @@ export default function Playlist() {
             {details.tracks.items.map((detail, index) => (
               <Song
                 key={index}
-                name={detail.track.name}
-                artist={detail.track.artists[0].name}
+                name={detail.track?.name}
+                artist={detail.track?.artists[0].name}
               />
             ))}
           </section>
