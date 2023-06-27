@@ -1,17 +1,25 @@
+import { useState } from "react";
+
 import "./index.scss";
 
-export default function Toggle() {
+export default function Toggle({ toggled, onClick }) {
+  const [toggle, isToggled] = useState(toggled);
+
+  function callback() {
+    isToggled(!toggle);
+    onClick(!toggle);
+  }
+
   return (
-    <div className="toggle">
-      <label className="toggle__label">
-        <input
-          type="checkbox"
-          className="toggle__checkbox"
-          name="toggle"
-          id="toggle"
-        />
-      </label>
-      <span className="toggle__switch"></span>
-    </div>
+    <label className="toggle">
+      <input
+        type="checkbox"
+        defaultChecked={toggle}
+        onClick={callback}
+        name="ToggleSwitch"
+        className="toggle__checkbox"
+      />
+      <span className="toggle__button" />
+    </label>
   );
 }

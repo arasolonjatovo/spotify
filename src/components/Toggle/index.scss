@@ -1,36 +1,49 @@
+@import '../../sass/variables';
+
 .toggle {
+  display: inline;
   position: relative;
-  display: flex;
-  align-items: center;
+  width: 45px;
+  height: 20px;
+
+
 
   &__checkbox {
-    height: 0;
-    width: 0;
-    visibility: hidden;
+    display: none;
+
+    &:checked+.toggle__button {
+      background-color: $primary-color;
+
+      &:before {
+        transform: translateX(20px);
+        background-color: white;
+
+      }
+    }
   }
 
-  &__label {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    width: 35px;
-    height: 20px;
-    background: #696a6b;
-    border-radius: 40px;
-    transition: background-color 0.2;
-  }
-
-  &__switch {
-    content: "";
+  &__button {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 60px;
-    background: #b6b6b6;
-    box-sizing: border-box;
+    cursor: pointer;
+    top: 0px;
     left: 0;
-    transition: 0.2s;
+    right: 0;
+    bottom: 0;
+    background: #646566;
+    transition: 0.3s;
+    border-radius: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      background-color: #B6B6B6;
+      border-radius: 60px;
+      transition: 0.3s;
+      bottom: -3px;
+      left: 0;
+    }
   }
+
 }

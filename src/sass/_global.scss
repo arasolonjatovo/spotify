@@ -16,18 +16,16 @@ body {
   background-color: white;
   font-family: "Helvetica Bold";
   font-size: 13px;
-  background-image: linear-gradient(
-    0deg,
-    rgba(19, 19, 19, 1) 30%,
-    rgba(62, 56, 62, 1) 52%,
-    rgba(154, 138, 153, 1) 72%,
-    rgba(65, 58, 65, 1) 96%
-  );
+  background-image: linear-gradient(0deg,
+      rgba(19, 19, 19, 1) 30%,
+      rgba(62, 56, 62, 1) 52%,
+      rgba(154, 138, 153, 1) 72%,
+      rgba(65, 58, 65, 1) 96%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: $text-color;
-  line-height: 16.9px;
+  line-height: 25px;
 }
 
 #root {

@@ -20,7 +20,11 @@ export default function Playlist() {
       setLoading(false);
     };
     loadData();
-  }, []);
+  }, [id]);
+
+  function logState(state) {
+    console.log("Actif: ", state);
+  }
   return (
     <>
       {!load && (
@@ -49,7 +53,7 @@ export default function Playlist() {
           </header>
           <section className="download">
             <p>Download</p>
-            <Toggle />
+            <Toggle toggled={false} onClick={logState} />
           </section>
           <section className="songSection">
             {details.tracks.items.map((detail, index) => (
