@@ -14,20 +14,15 @@
     cursor: pointer;
   }
 
+  &:active {
+    box-shadow: inset 1px 1px 10px;
+  }
+
   &--primary {
     background-color: $primary-color;
-
-    &:hover {
-      background-color: transparent;
-      border: 2px solid $primary-color;
-    }
   }
 
   &--secondary {
     border: 1px solid $primary-color;
-
-    &:hover {
-      background-color: $primary-color;
-    }
   }
 }

@@ -9,6 +9,19 @@ import Button from "../Button";
 export default function SearchBar({ setPlaylists }) {
   const [searchKey, setSearchKey] = useState("");
 
+  function validInput(input) {
+    if (input === "") {
+      document.querySelector(
+        ".searchbar.button.button--primary"
+      ).disabled = true;
+    } else {
+      document.querySelector(
+        ".searchbar.button.button--primary"
+      ).disabled = false;
+      searchPlaylist(searchKey, setPlaylists);
+    }
+  }
+
   return (
     <label className="searchbar">
       <input
@@ -21,7 +34,7 @@ export default function SearchBar({ setPlaylists }) {
       <Button
         label="Rechercher"
         type="searchbar button button--primary"
-        onClick={() => searchPlaylist(searchKey, setPlaylists)}
+        onClick={() => validInput(searchKey)}
       />
     </label>
   );
