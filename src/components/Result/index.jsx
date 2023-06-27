@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 import "./index.scss";
 
 import Button from "../Button";
 
-export default function Result({ name, creator, cover }) {
+export default function Result({ name, creator, cover, id }) {
+  const navigate = useNavigate();
   return (
     <article className="result">
       <div className="result__leftPart">
@@ -16,7 +19,11 @@ export default function Result({ name, creator, cover }) {
           <p className="result__creator">{creator}</p>
         </div>
       </div>
-      <Button label="Voir" type="result button button--primary" />
+      <Button
+        label="Voir"
+        type="result button button--primary"
+        onClick={() => navigate(`/playlist/${id}`)}
+      />
     </article>
   );
 }

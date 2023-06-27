@@ -22,14 +22,18 @@ export default function Home() {
         <p className="search__nbResults">
           {playlists.length} Résultats trouvés
         </p>
-        {playlists.map((playlist, key) => (
-          <Result
-            name={playlist.name}
-            creator={playlist.owner.display_name}
-            key={playlist.id}
-            cover={playlist.images[0].url}
-          />
-        ))}
+        {
+          // display every item in the playlists array
+          playlists.map((playlist, index) => (
+            <Result
+              name={playlist.name}
+              creator={playlist.owner.display_name}
+              key={index}
+              cover={playlist.images[0].url}
+              id={playlist.id}
+            />
+          ))
+        }
       </section>
     </div>
   );
