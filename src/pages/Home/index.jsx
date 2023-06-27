@@ -20,7 +20,9 @@ export default function Home() {
       </section>
       <section className="results">
         <p className="search__nbResults">
-          {playlists.length} Résultats trouvés
+          {playlists.length <= 1
+            ? `${playlists.length} Résultat trouvé`
+            : `${playlists.length} Résultats trouvés`}
         </p>
         {
           // display every item in the playlists array
