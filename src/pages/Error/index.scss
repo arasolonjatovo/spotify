@@ -1,0 +1,43 @@
+@import '../../sass/variables';
+
+.error {
+    text-align: center;
+    margin-top: 40%;
+
+    @media (min-width: $large) {
+        margin-top: 10%;
+    }
+
+    &__logo {
+        display: block;
+        height: 60px;
+        width: auto;
+        margin: 10% auto;
+
+        @media (min-width: $large) {
+            height: 90px;
+            margin: 5% auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10%;
+
+        @media (min-width: $large) {
+            margin-bottom: 4%;
+        }
+    }
+
+    &__para {
+
+        @media (min-width: $large) {
+            margin-bottom: 2%;
+        }
+    }
+
+    @media (min-width: $large) {
+        & button.button--primary {
+            padding: 0 4%;
+        }
+    }
+}

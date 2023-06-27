@@ -20,7 +20,7 @@ export default function Playlist() {
       setLoading(false);
     };
     loadData();
-  }, [id]);
+  }, []);
 
   // @params {boolean} state
 
