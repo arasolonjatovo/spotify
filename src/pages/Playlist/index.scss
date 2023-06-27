@@ -41,7 +41,7 @@
     }
 
     @media (min-width: $large) {
-      margin-bottom: 15%;
+      margin-bottom: 5%;
     }
   }
 
@@ -56,8 +56,8 @@
     }
 
     @media (min-width: $large) {
-      margin: 8% 0;
-      font-size: 15px;
+      margin: 5% 0;
+      font-size: 18px;
     }
   }
 
@@ -93,8 +93,6 @@
   }
 
   @media (min-width: $large) {
-    justify-content: center;
-    column-gap: 15%;
-    margin: 5%;
+    margin: 5% 25%;
   }
 }
