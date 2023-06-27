@@ -2,6 +2,9 @@ import "./index.scss";
 
 import elipsis from "../../assets/elipsis.webp";
 
+// @params {string} name
+// @params {string} artist
+
 export default function Song({ name, artist }) {
   return (
     <article>

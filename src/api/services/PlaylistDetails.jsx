@@ -1,3 +1,6 @@
+// @params {string} id
+// @params {function} setDetails
+
 export default async function getPlaylistDetails({ id, setDetails }) {
   await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
     headers: {

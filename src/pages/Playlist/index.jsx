@@ -22,6 +22,8 @@ export default function Playlist() {
     loadData();
   }, [id]);
 
+  // @params {boolean} state
+
   function logState(state) {
     console.log("Actif: ", state);
   }

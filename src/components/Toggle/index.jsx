@@ -2,6 +2,9 @@ import { useState } from "react";
 
 import "./index.scss";
 
+// @params {boolean} toggled
+// @params {function} onClick
+
 export default function Toggle({ toggled, onClick }) {
   const [toggle, isToggled] = useState(toggled);
 

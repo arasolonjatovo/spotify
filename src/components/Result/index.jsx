@@ -4,6 +4,11 @@ import "./index.scss";
 
 import Button from "../Button";
 
+// @params {string} name
+// @params {string} creator
+// @params {string} cover
+// @params {string} id
+
 export default function Result({ name, creator, cover, id }) {
   const navigate = useNavigate();
   return (

@@ -6,9 +6,12 @@ import searchPlaylist from "../../api/services/Search";
 
 import Button from "../Button";
 
+//@params {function} setPlaylists
+
 export default function SearchBar({ setPlaylists }) {
   const [searchKey, setSearchKey] = useState("");
 
+  // @params {string} input
   function validInput(input) {
     if (input === "") {
       document.querySelector(

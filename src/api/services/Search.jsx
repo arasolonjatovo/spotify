@@ -1,3 +1,6 @@
+// @params {string} searchKey
+// @params {function} setPlaylists
+
 export default async function searchPlaylist(searchKey, setPlaylists) {
   await fetch(
     `https://api.spotify.com/v1/search?q=${searchKey}&type=playlist&limit=50`,
