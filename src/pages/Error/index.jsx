@@ -8,6 +8,7 @@ import logo from "../../assets/logo.webp";
 
 export default function Error() {
   const navigate = useNavigate();
+  document.title = "Oops, tout ne s'est aps passé comme prévu";
 
   return (
     <div className="error">

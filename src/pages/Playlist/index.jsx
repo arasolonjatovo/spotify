@@ -10,9 +10,10 @@ import Song from "../../components/Song";
 import "./index.scss";
 
 export default function Playlist() {
-  document.title = "Spotify - Lecteur web";
   let { id } = useParams();
   const [details, setDetails] = useState([]);
+  document.title = `Playlist • ${details.name}`;
+
   const [load, setLoading] = useState(true);
   useEffect(() => {
     const loadData = async () => {

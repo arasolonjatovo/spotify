@@ -8,6 +8,8 @@ import Result from "../../components/Result";
 import logo from "../../assets/logo.webp";
 
 export default function Home() {
+  document.title = "Trouvez des playlists qui vous correspondent";
+
   const [playlists, setPlaylists] = useState([]);
   return (
     <div>
