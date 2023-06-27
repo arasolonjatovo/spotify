@@ -22,10 +22,8 @@ export default function Playlist() {
     loadData();
   }, [id]);
 
-  // @params {boolean} state
-
-  function logState(state) {
-    console.log("Actif: ", state);
+  function tempFunc() {
+    return;
   }
   return (
     <>
@@ -55,7 +53,7 @@ export default function Playlist() {
           </header>
           <section className="download">
             <p>Download</p>
-            <Toggle toggled={false} onClick={logState} />
+            <Toggle toggled={false} onClick={tempFunc} />
           </section>
           <section className="songSection">
             {details.tracks.items.map((detail, index) => (
