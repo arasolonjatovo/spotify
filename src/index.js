@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import "./api/client";
+
 import Playlist from "./pages/Playlist";
 import Home from "./pages/Home";
 import Error from "./pages/Error";

@@ -1,10 +1,8 @@
 import "./index.scss";
 
-import cover from "../../assets/cover.png";
-
 import Button from "../Button";
 
-export default function Result({ name, creator }) {
+export default function Result({ name, creator, cover }) {
   return (
     <article className="result">
       <div className="result__leftPart">
